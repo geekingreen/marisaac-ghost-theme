@@ -1,0 +1,61 @@
+@import '../../../bower_components/normalize-css/normalize.css';
+@import '_variables';
+@import '_fonts';
+//@import 'functions/*';
+@import 'components/*';
+
+
+.hidden {
+	display: none;
+}
+
+div.main-header-content {
+	position: relative;
+	overflow: hidden;
+	h1.page-title {
+		color: $main-color;
+		font-size: 4rem;
+		font-weight: lighter;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+		margin: 0px;
+		border-bottom: 1px solid black;
+	}
+
+	h2.page-description {
+		float: left;
+		background: #ffffff;
+		padding: 0px 4px;
+		color: $secondary-color;
+		position: relative;
+		margin-top: -0.7rem;
+		margin-left: 7rem;
+		letter-spacing: 0.1rem;
+	}
+}
+
+a {
+	color: $gray;
+	font-family: 'Squada One', cursive;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:active, &:visited {
+		color: $gray-light;
+	}
+
+	&:hover {
+		color: $secondary-color;
+	}
+}
+
+nav.pagination {
+	font-family: 'Squada One', cursive;
+	margin: 1rem 0;
+}
+
+footer.site-footer {
+	margin-top: 1rem;
+	color: $gray-light
+	font-size: 0.6rem;
+}

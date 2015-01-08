@@ -1,0 +1,26 @@
+{
+  "name": "marisaac",
+  "version": "0.0.1",
+  "authors": [
+    "geekingreen <isaac@geekingreen.com>"
+  ],
+  "description": "marisaac ghost theme",
+  "keywords": [
+    "marisaac",
+    "ghost",
+    "blog",
+    "theme"
+  ],
+  "license": "WTFPL",
+  "homepage": "https://github.com/geekingreen/marisaac-ghost-theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.1"
+  }
+}

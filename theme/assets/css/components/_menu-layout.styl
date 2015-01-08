@@ -1,0 +1,126 @@
+html,
+body,
+.gig-container,
+.gig-content {
+	margin: 0px;
+	height: 100%;
+}
+
+.gig-content {
+	overflow-y: auto;
+}
+
+.gig-content-inner {
+	padding: 10px;
+}
+
+.gig-content,
+.gig-content-inner {
+	position: relative;
+}
+
+.gig-container {
+	position: relative;
+	overflow: hidden;
+	max-width: 1324px;
+	margin: 0px auto;
+}
+
+.gig-menu-button {
+	position: fixed;
+	font-size: 1.5rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	top: 0;
+	right: 0;
+	padding: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.gig-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 300px;
+	height: 100%;
+	background: #ffffff;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	overflow-y: auto;
+	-webkit-box-shadow: -3px 0px 8px rgba(0,0,0,0.6);
+	box-shadow: -3px 0px 8px rgba(0,0,0,0.6);
+	h2 {
+		margin: 0px;
+		padding 1rem;
+		text-align: center;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			&:first-child a {
+				border-top: 1px solid green;
+				border-bottom: 1px solid green;
+			}
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 1em;
+				border-bottom: 1px solid green;
+				&:hover {
+					background: rgba(0,0,0,0.5);
+				}
+			}
+		}
+	}
+}
+
+/* Slide-in */
+.gig-menu {
+	&.gig-slide-right {
+		-webkit-transform: translate3d(100%, 0, 0);
+		transform: translate3d(100%, 0, 0);
+	}
+
+	&.gig-slide-left {
+		right: initial;
+		left: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	&.gig-slide-right, &.gig-slide-left {
+		visibility: visible;
+		&.gig-menu-open {
+			visibility: visible;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.gig-content-inner {
+		padding: 10px;
+		padding-top: 50px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.gig-menu-button {
+		display: none;
+	}
+	.gig-content-inner {
+		padding: 20px;
+		margin-right: 300px;
+	}
+	.gig-slide-left, .gig-slide-right {
+		&.gig-menu {
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+}
