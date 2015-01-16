@@ -4,8 +4,8 @@
 {{! The big featured header }}
 <header class="main-header tag-head {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
 	<nav class="main-nav overlay clearfix">
-		<a class="back-button fa fa-chevron-left" href="{{@blog.url}}"> Home</a>
-		<a class="subscribe-button fa fa-rss pull-right" href="{{@blog.url}}/tag/{{tag.slug}}/rss/"> {{tag.name}}</a>
+		<a class="back-button" href="{{@blog.url}}"><i class="fa fa-chevron-left"></i> Home</a>
+		<a class="subscribe-button pull-right" href="{{@blog.url}}/tag/{{tag.slug}}/rss/"><i class="fa fa-rss"></i> {{tag.name}}</a>
 	</nav>
 	<div class="vertical">
 		<div class="main-header-content inner">

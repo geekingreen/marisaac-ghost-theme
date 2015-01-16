@@ -62,16 +62,17 @@ body,
 		list-style: none;
 		li {
 			&:first-child a {
-				border-top: 1px solid green;
-				border-bottom: 1px solid green;
+				border-top: 1px solid $gray-light;
+				border-bottom: 1px solid $gray-light;
 			}
 			a {
 				display: block;
 				text-decoration: none;
 				padding: 1em;
-				border-bottom: 1px solid green;
+				border-bottom: 1px solid $gray-light;
 				&:hover {
-					background: rgba(0,0,0,0.5);
+					color: $main-color;
+					background: $gray-light;
 				}
 			}
 		}
