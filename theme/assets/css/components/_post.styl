@@ -1,100 +1,100 @@
 article {
 
-	border-bottom: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
 
-	header.post-header {
+  header.post-header {
 
-		h1.post-title {
-			color: $main-color;
-		}
+    h1.post-title {
+      color: $main-color;
+    }
 
-		h2.post-title {
-			a {
-				font-size: 2rem;
-				text-transform: uppercase;
-				text-decoration: none;
-				letter-spacing: 0.15rem;
-				&:after {
-					font-family: FontAwesome;
-					content: " \f054";
-				}
-			}
-		}
-	}
+    h2.post-title {
+      a {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15rem;
+        &:after {
+          font-family: FontAwesome;
+          content: " \f054";
+        }
+      }
+    }
+  }
 
-	&:nth-child(even) header.post-header h2.post-title a {
-		color: $main-color;
-		&:after {
-			color: $secondary-color;
-		}
-		&:active, &:visited {
-			color: $main-color;
-		}
-		&:hover {
-			color: $secondary-color;
-			&:after {
-				color: $main-color;
-			}
-		}
-	}
+  &:nth-child(even) header.post-header h2.post-title a {
+    color: $main-color;
+    &:after {
+      color: $secondary-color;
+    }
+    &:active, &:visited {
+      color: $main-color;
+    }
+    &:hover {
+      color: $secondary-color;
+      &:after {
+        color: $main-color;
+      }
+    }
+  }
 
-	&:nth-child(odd) header.post-header a {
-		color: $secondary-color;
-		&:after {
-			color: $main-color;
-		}
-		&:active, &:visited {
-			color: $secondary-color;
-		}
-		&:hover {
-			color: $main-color;
-			&:after {
-				color: $secondary-color;
-			}
-		}
-	}
+  &:nth-child(odd) header.post-header a {
+    color: $secondary-color;
+    &:after {
+      color: $main-color;
+    }
+    &:active, &:visited {
+      color: $secondary-color;
+    }
+    &:hover {
+      color: $main-color;
+      &:after {
+        color: $secondary-color;
+      }
+    }
+  }
 
-	&.post {
-		img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 100%;
-			max-height: 100%;
-		}
-		.post-excerpt, .post-content {
-			font-family: 'Open Sans', sans-serif;
-		}
-	}
+  &.post {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .post-excerpt, .post-content {
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
 
-	.post-meta {
-		img.author-thumb {
-			max-width: 75px;
-			max-height: 75px;
-			border-radius: 50%;
-			box-shadow: 2px 2px 5px rgba(0,0,0,0.6), inset 0px 0px 6px rgba(0,0,0,0.6);
-			padding: 6px;
-			margin:0 0 1rem 0;
-		}
-		time.post-date {
-			color: $gray;
-			font-size: 0.6rem;
-			font-family: 'Open Sans', sans-serif;
-		}
-	}
+  .post-meta {
+    img.author-thumb {
+      max-width: 75px;
+      max-height: 75px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.6), inset 0px 0px 6px rgba(0,0,0,0.6);
+      padding: 6px;
+      margin:0 0 1rem 0;
+    }
+    time.post-date {
+      color: $gray;
+      font-size: 0.6rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
 
-	section.share {
+  section.share {
 
-		h4 {
-			margin-bottom: 0;
-			color: $secondary-color;
-		}
+    h4 {
+      margin-bottom: 0;
+      color: $secondary-color;
+    }
 
-		a {
-			color: $main-color;
-			&:hover {
-				color: $secondary-color;
-			}
-		}
-	}
+    a {
+      color: $main-color;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 }

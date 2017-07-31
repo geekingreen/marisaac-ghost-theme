@@ -1,25 +1,17 @@
 module.exports = {
-	fonts: {
-		files: [{
-			expand: true,
-			cwd: 'theme/',
-			src: ['assets/fonts/**'],
-			dest: 'dist/'
-		},
-		{
-			expand: true,
-			cwd: 'bower_components/fontawesome/',
-			src: ['fonts/**'],
-			dest: 'dist/assets/'
-		}]
-	},
+  package: {
+    files: [{
+      src: ['package.json'],
+      dest: 'dist/',
+    }],
+  },
 
-	templates: {
-		files: [{
-			expand: true,
-			cwd: 'theme/',
-			src: ['**/*.hbs'],
-			dest: 'dist/'
-		}],
-	}
+  templates: {
+    files: [{
+      expand: true,
+      cwd: 'theme/',
+      src: ['**/*.hbs'],
+      dest: 'dist/',
+    }],
+  },
 };

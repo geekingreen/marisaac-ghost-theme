@@ -1,4 +1,4 @@
 module.exports = {
-	tmp: ['tmp/'],
-	dist: ['dist/**/*']
+  tmp: ['tmp/'],
+  dist: ['dist/**/*']
 };
